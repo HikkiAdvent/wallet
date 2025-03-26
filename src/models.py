@@ -1,7 +1,7 @@
 from sqlalchemy import CheckConstraint
 from sqlalchemy.orm import Mapped, mapped_column
 
-from .database import Base, sync_engine
+from src.database import Base, sync_engine
 
 
 class Wallet(Base):

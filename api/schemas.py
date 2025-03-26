@@ -3,8 +3,8 @@ from enum import Enum
 
 
 class OperationType(str, Enum):
-    DEPOSIT = "DEPOSIT"
-    WITHDRAW = "WITHDRAW"
+    DEPOSIT = 'DEPOSIT'
+    WITHDRAW = 'WITHDRAW'
 
 
 class OperationRequest(BaseModel):
