@@ -11,14 +11,16 @@ class Settings(BaseSettings):
     @property
     def DATABASE_URL_asyncpg(self):
         return (
-            f'postgresql+asyncpg://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}'
+            f'postgresql+asyncpg://{self.POSTGRES_USER}\
+                :{self.POSTGRES_PASSWORD}'
             f'@{self.DB_HOST}:{self.DB_PORT}/{self.POSTGRES_DB}'
         )
 
     @property
     def DATABASE_URL_psycopg(self):
         return (
-            f'postgresql+psycopg://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}'
+            f'postgresql+psycopg://{self.POSTGRES_USER}\
+                :{self.POSTGRES_PASSWORD}'
             f'@{self.DB_HOST}:{self.DB_PORT}/{self.POSTGRES_DB}'
         )
 
